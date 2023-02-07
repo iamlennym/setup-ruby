@@ -38,6 +38,7 @@ export async function setupRuby(options = {}) {
 
   process.chdir(inputs['working-directory'])
 
+console.log("HELLLLLLOOOOO");
   const platform = common.getVirtualEnvironmentName()
   const [engine, parsedVersion] = parseRubyEngineAndVersion(inputs['ruby-version'])
 
