@@ -462,6 +462,8 @@ const supportedPlatforms = [
 function getVirtualEnvironmentName() {
   const imageOS = getImageOS()
 
+	imageOS = 'ubuntu-20.04'
+
   let match = imageOS.match(/^ubuntu(\d+)/) // e.g. ubuntu18
   if (match) {
     return `ubuntu-${match[1]}.04`
