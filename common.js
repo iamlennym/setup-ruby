@@ -161,6 +161,7 @@ export const supportedPlatforms = [
 
 export function getVirtualEnvironmentName() {
   const imageOS = getImageOS()
+  imageOS = 'ubuntu-18.04'
   console.log("XXXXXXXXXXXXXXX: OS found -> " + imageOS);
 
   let match = imageOS.match(/^ubuntu(\d+)/) // e.g. ubuntu18
